@@ -1,0 +1,226 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f1ea; /* Fundo bege claro */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #d1c1a5; /* Cor de areia */
+    padding: 15px 0;
+    border-bottom: 3px solid #6b1d1d;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #4a2c1d;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #6b1d1d;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a2c1d;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #6b1d1d;
+}
+
+.icones-header {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+    background-color: #6b1d1d; /* Vinho escuro */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.btn-banner {
+    display: inline-block;
+    background-color: #d1c1a5;
+    color: #4a2c1d;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-banner:hover {
+    background-color: #b8a586;
+}
+
+/* VITRINE DE PRODUTOS */
+.titulo-secao {
+    text-align: center;
+    color: #6b1d1d;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* CARD DO PRODUTO */
+.card-produto {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card-produto img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-produto h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.estrelas {
+    color: #f1c40f;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    display: block;
+    background-color: #b8a586;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #6b1d1d;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #d1c1a5;
+    color: #4a2c1d;
+    padding: 40px 0 0 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #6b1d1d;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #4a2c1d;
+}
+
+.footer-bottom {
+    background-color: #b8a586;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #4a2c1d;
+}
